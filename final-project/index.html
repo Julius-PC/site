@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MORE力</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html" class="link">
+          <img src="media/logo-morelic.png"
+               width="30"
+               height="30"
+               alt="MORE力 logo">
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">=</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#artists">Artists</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <p class="hero-tagline-small">Live Entertainment • Artist Management • Hong Kong</p>
+          <h1>Empowering 香港 Artistry</h1>
+          <p class="hero-description">
+            MORE力, pronounced /more-lic/, functions as medium of creative exploration for independent music, with one goal in mind… empowering 香港 artistry. We are a music label/collective working to uplift Hong Kong talent and showcase our art to an international audience.
+          </p>
+        </div>
+
+        <h1 class="hero-logo">力</h1>
+      </section>
+
+      <section id="artists" class="artists section">
+        <header class="section-header">
+          <h2>Artists &amp; Projects</h2>
+          <p>Discover the sounds and stories powered by MORE力.</p>
+        </header>
+
+        <div class="artists-grid">
+          <article class="artist-card">
+            <img
+              src="media/chriskeng-400.jpg"
+              srcset="
+                media/chriskeng-400.jpg 400w,
+                media/chriskeng-800.jpg 800w
+              "
+              sizes="(max-width: 600px) 100vw, 33vw"
+              width="400"
+              height="400"
+              alt="CHRIS KENG Artist Photo">
+            <div class="artist-card-body">
+              <h3>CHRIS KENG</h3>
+              <p class="artist-genre">Alt-RnB / Indie</p>
+              <p class="artist-description">
+                CHRIS KENG is an artist and songwriter, born in Hong Kong and shaped by the sounds of RnB, alternative and Indie music​.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="artist-card">
+            <img
+              src="media/flare-performing-400.jpg"
+              srcset="
+                media/flare-performing-400.jpg 400w,
+                media/flare-performing-800.jpg 800w
+              "
+              sizes="(max-width: 600px) 100vw, 33vw"
+              width="400"
+              height="400"
+              alt="Flare performing at INTROIT">
+            <div class="artist-card-body">
+              <h3>LIVE IN HONG KONG: INTROIT</h3>
+              <p class="artist-genre">Live Showcase</p>
+              <p class="artist-description">
+                Hong Kong's first Indie Artist Showcase. Starring risy, Flare, and blam.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <header class="section-header">
+          <h2>Contact MORE力</h2>
+          <p>For bookings, collaborations, and press enquiries.</p>
+        </header>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First name</label>
+              <input id="first-name" name="first-name" type="text" required>
+            </div>
+
+            <div class="form-field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="last-name" type="text" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="button button-primary" type="submit">
+            Send message
+          </button>
+
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-text">&copy; <span id="year"></span> MORE力. All rights reserved.</p>
+      <p><a href="#hero">Back to top</a> • <a href="about.html">About</a></p>
+    </footer>
+  </body>
+</html>
